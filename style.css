@@ -1,0 +1,66 @@
+/* Ajuste geral do body */
+body {
+  background-color: #f8f9fa;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Ajuste do cabeçalho */
+.container > .d-flex {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* Logos */
+img {
+  height: 50px;
+  max-width: 100%;
+  padding: 2px;
+  margin: 2px;
+}
+/* img[alt="Logo Assurant"] {
+  height: 150px !important;
+  max-width: 100%;
+} */
+
+/* Título */
+h2 {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+/* Fieldsets */
+fieldset {
+  background-color: #fff;
+}
+
+/* Botão Enviar */
+button[type="submit"] {
+  font-weight: 600;
+  padding: 10px 30px;
+  font-size: 16px;
+}
+
+/* Textarea */
+textarea.form-control {
+  resize: vertical;
+  min-height: 80px;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .d-flex.justify-content-between {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .text-end,
+  .d-flex.justify-content-end {
+    justify-content: center !important;
+    text-align: center !important;
+  }
+
+  button[type="submit"] {
+    width: 100%;
+  }
+}
