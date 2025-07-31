@@ -15,8 +15,8 @@
 <div class="container mt-4">
   <!-- Logos  -->
   <div class="align-items-left mb-3">
-    <img src="img/Zurich.png" alt="Logo">
-    <img src="img/ecoassist_novo2.png" alt="Logo">
+    <img src="img/assurant.png" alt="Logo">
+    <img src="img/ecoassist_.png" alt="Logo">
   </div>
 
   <h2 class="text-center mb-4 fw-bold">Cadastro de Retirada</h2>
@@ -138,7 +138,15 @@
             <div class="col-md-4"><label class="form-label">Bairro *</label><input type="text" class="form-control" id="bairro" required></div>
             <div class="col-md-12"><label class="form-label">Local de Referência *</label><input type="text" class="form-control" required></div>
           </div>
+          <legend class="w-auto px-2">Horário da Retirada</legend>
+          <div class="mb-3">
+            <button type="button" class="btn btn-outline-primary" id="btnSelecionarHorario">Selecionar Horário Disponível</button>
+            <select id="horariosDisponiveis" class="form-select mt-2" required>
+              <option value="">Selecione um horário</option>
+            </select>
+          </div>
         </fieldset>
+        
       </div>
     </div>
 
@@ -164,6 +172,10 @@
 
 <!-- Seu script customizado -->
 <script src="scripts.js"></script>
+
+<!-- Google Calendars -->
+<script src="https://accounts.google.com/gsi/client"></script>
+<script src="https://apis.google.com/js/api.js"></script>
 
 </body>
 </html>
